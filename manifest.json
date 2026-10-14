@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Refund Report Sidebar",
+  "version": "1.0.0",
+  "description": "Internal tool for Snov.io support - fill refund data in a sidebar and generate a copy-ready report for Google Chat.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/refund-16.png",
+      "32": "icons/refund-32.png",
+      "48": "icons/refund-48.png",
+      "128": "icons/refund-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/refund-16.png",
+    "32": "icons/refund-32.png",
+    "48": "icons/refund-48.png",
+    "128": "icons/refund-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup.html",
+        "report.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Refund Report</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-brand">
+      <img src="icons/refund-64.png" width="26" height="26" alt="">
+      <h1>Refund Report</h1>
+      <button type="button" class="icon-btn" id="btn-history" aria-label="History" title="History">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </button>
+    </div>
+    <button type="button" class="icon-btn" id="btn-close" aria-label="Close" title="Close">
+      <svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </header>
+
+  <section id="history-view" class="content" hidden>
+    <div class="history-head">
+      <strong>History</strong>
+      <button type="button" class="link-btn" id="btn-history-clear">Delete all</button>
+    </div>
+    <ul id="history-list" class="history-list"></ul>
+    <p id="history-empty" class="history-empty" hidden>No reports yet.</p>
+  </section>
+
+  <form id="refund-form" class="content" autocomplete="off">
+    <div class="form-group">
+      <label for="user_email">User email</label>
+      <input type="text" id="user_email" placeholder="user@email.com">
+    </div>
+    <div class="form-group">
+      <label for="how_long">How long with us</label>
+      <input type="text" id="how_long" placeholder="YYYY-MM-DD HH:MM:SS">
+    </div>
+    <div class="form-group">
+      <label for="plan">Plan</label>
+      <select id="plan"></select>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="charge_date">Charge date</label>
+        <input type="text" id="charge_date" placeholder="DD Mon YYYY - DD Mon YYYY">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" inputmode="decimal" data-numeric>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="credits">Credits used</label>
+        <input type="text" id="credits" inputmode="numeric" data-numeric placeholder="0">
+      </div>
+      <div class="form-group">
+        <label for="recipients">Recipients used</label>
+        <input type="text" id="recipients" inputmode="numeric" data-numeric placeholder="0">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="warmup">Warm-up used</label>
+        <input type="text" id="warmup" inputmode="numeric" data-numeric placeholder="0">
+      </div>
+      <div class="form-group">
+        <label for="slots">Slots used</label>
+        <input type="text" id="slots" inputmode="numeric" data-numeric placeholder="0">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="reason">Reason</label>
+      <textarea id="reason" rows="6" placeholder="Unwanted renewal"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="offered">What was offered to prevent refund/cancellation, and how did the customer respond</label>
+      <textarea id="offered" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="form_filled">Form filled out</label>
+      <select id="form_filled">
+        <option value="">—</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="chat_link">Chat link</label>
+      <input type="text" id="chat_link" placeholder="https://app.crisp.chat/...">
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn btn-secondary" id="btn-clear">Clear</button>
+      <button type="submit" class="btn btn-primary" id="btn-generate">Generate report</button>
+    </div>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
