@@ -67,10 +67,7 @@ input:focus, textarea:focus, select:focus {
 .actions {
   display: flex;
   gap: 8px;
-  position: sticky;
-  bottom: -16px;
-  padding: 10px 0 0;
-  background: linear-gradient(to top, #fff 75%, transparent);
+  padding-top: 4px;
 }
 .btn {
   border: 0; border-radius: 8px;
