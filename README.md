@@ -38,7 +38,8 @@ To update later, download the new zip, replace the folder contents and click the
    | Amount | Numbers only; the `$` is added in the report |
    | Credits used / Recipients used / Warm-up used / Slots used | Numbers only (dots and commas allowed) |
    | Reason | Free text |
-   | What was offered to prevent refund/cancellation, and how did the customer respond | Free text |
+   | What was offered to prevent refund/cancellation | Free text |
+   | How did the customer respond | Free text |
    | Form filled out | Yes / No |
    | Chat link | |
 
@@ -60,8 +61,11 @@ Slots used: 0
 
 Reason: Unwanted renewal
 
-What was offered to prevent refund/cancellation, and how did the customer respond:
-A discount coupon and a call were offered but the customer rejected.
+What was offered to prevent refund/cancellation:
+A discount coupon and a call.
+
+How did the customer respond:
+Rejected both and kept insisting on a full refund.
 
 Form filled out: Yes
 

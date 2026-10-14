@@ -9,7 +9,8 @@ const FIELDS = [
   { id: 'warmup',      label: 'Warm-up used' },
   { id: 'slots',       label: 'Slots used' },
   { id: 'reason',      label: 'Reason', gapBefore: true },
-  { id: 'offered',     label: 'What was offered to prevent refund/cancellation, and how did the customer respond', stacked: true },
+  { id: 'offered',     label: 'What was offered to prevent refund/cancellation', stacked: true },
+  { id: 'customer_response', label: 'How did the customer respond', stacked: true },
   { id: 'form_filled', label: 'Form filled out', gapBefore: true },
   { id: 'chat_link',   label: 'Chat link', gapBefore: true }
 ];
