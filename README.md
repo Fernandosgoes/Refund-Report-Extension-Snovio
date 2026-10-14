@@ -13,7 +13,7 @@ A Chrome sidebar extension for Snov.io support agents. Fill in the refund / canc
 
 ## Download and install
 
-1. **[Download Refund-Report-Extension.zip](https://github.com/Fernandosgoes/Refound-Report-Extension-Snovio/raw/main/Refund-Report-Extension.zip)**
+1. **[Download Refund-Report-Extension.zip](https://github.com/Fernandosgoes/Refund-Report-Extension-Snovio/raw/main/Refund-Report-Extension.zip)**
 2. Unzip it anywhere you want to keep it (for example `Documents\Refund-Report-Extension`). **Don't delete this folder afterwards** — Chrome loads the extension from it.
 3. Open `chrome://extensions` in Chrome.
 4. Turn on **Developer mode** (top-right toggle).
